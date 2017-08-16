@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        scrollView.contentSize = CGSize(width: 400, height: 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,8 +35,11 @@ class ViewController: UIViewController {
         let newImage = UIImageView(image: UIImage(named: "\(lastImage).jpeg"))
         let bottomImageFrame = getBottomImageFrame()
         newImage.frame.origin = CGPoint(x: scrollView.contentSize.width / 2 - newImage.frame.width / 2,y: bottomImageFrame.maxY)
-        self.scrollView.addSubview(newImage)
         imageList.append(newImage)
+        scrollView.contentSize = CGSize(width: 400, height: imageList.reduce(0, { (res, view) -> CGFloat in
+            res + view.frame.height
+        }))
+        scrollView.addSubview(newImage)
         updateLastImage()
         print("scrollView.contentSize \(scrollView.contentSize) scrollView.contentOffset \(scrollView.contentOffset)")
         print("last image \(lastImage)")
