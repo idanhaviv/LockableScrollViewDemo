@@ -25,10 +25,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addToTop(_ sender: Any) {
-        let newImage = UIImageView(image: UIImage(named: "1.jpeg"))
-        self.scrollView.addSubview(newImage)
-        print(scrollView.contentSize, scrollView.contentOffset, newImage.frame)
-        
+        let newImage = UIImageView(image: UIImage(named: "\(lastImage).jpeg"))
+        let newImageHeight = newImage.frame.height
+        imageList = updateYPositionBy(diff: newImageHeight, views: imageList) as! [UIImageView]
+        newImage.frame.origin = CGPoint(x: scrollView.contentSize.width / 2 - newImage.frame.width / 2,y: 0)
+        imageList.insert(newImage, at: 0)
+        scrollView.contentSize = CGSize(width: 400, height: imageList.reduce(0, { (res, view) -> CGFloat in
+            res + view.frame.height
+        }))
+        scrollView.addSubview(newImage)
+        updateLastImage()
+        print("scrollView.contentSize \(scrollView.contentSize) scrollView.contentOffset \(scrollView.contentOffset)")
+        print("last image \(lastImage)")
+    }
+    
+    func updateYPositionBy(diff: CGFloat, views: [UIView]) -> [UIView] {
+        return views.map { view in
+            view.frame.origin.y += diff
+            return view
+        }
     }
 
     @IBAction func addToBottom(_ sender: Any) {
@@ -43,6 +58,10 @@ class ViewController: UIViewController {
         updateLastImage()
         print("scrollView.contentSize \(scrollView.contentSize) scrollView.contentOffset \(scrollView.contentOffset)")
         print("last image \(lastImage)")
+    }
+    
+    func getTopImageFrame() -> CGRect {
+        return imageList.first?.frame ?? CGRect(x: 0, y: 0, width: 0, height: 0)
     }
     
     func getBottomImageFrame() -> CGRect {
