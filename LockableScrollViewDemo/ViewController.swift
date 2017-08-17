@@ -135,6 +135,14 @@ class ViewController: UIViewController {
         }
     }
     
+    func updateScrollPosition(addedView: UIView) -> Void {
+        let viewHeight = addedView.frame.height
+        let viewBottomPosition = addedView.frame.height + addedView.frame.origin.y
+        let viewVisiblePart = viewBottomPosition - scrollView.contentOffset.y
+        let viewInvisibleAddition = viewHeight - viewVisiblePart
+        scrollView.contentOffset.y += viewInvisibleAddition
+    }
+    
     func addAtPosition(position: Position) {
         let newImage = UIImageView(image: UIImage(named: "\(lastImageIndex).jpeg"))
         let newImageHeight = newImage.frame.height
@@ -148,6 +156,7 @@ class ViewController: UIViewController {
         
         lastScrollPosition += newImage.frame.height
         scrollView.contentSize.height += newImage.frame.height
+        updateScrollPosition(addedView: newImage)
 //        scrollView.contentOffset.y += newImageHeight
         scrollView.addSubview(newImage)
         updateLastImage()
