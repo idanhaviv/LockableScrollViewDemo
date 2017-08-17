@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LockableScrollViewDemo/ViewController.swift"
-            timestampString = "524652185.18189"
+            timestampString = "524670836.798237"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "addToTop(_:)"
             landmarkType = "7">
             <Locations>
@@ -90,13 +90,157 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LockableScrollViewDemo/ViewController.swift"
-            timestampString = "524652185.18189"
+            timestampString = "524670836.798237"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "addToTop(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LockableScrollViewDemo/ViewController.swift"
+            timestampString = "524671725.19004"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "addAtPosition(position:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LockableScrollViewDemo/ViewController.swift"
+            timestampString = "524671099.253905"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "updateYPosition(insertedIndex:diff:views:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LockableScrollViewDemo.ViewController.updateYPosition (insertedIndex : Swift.Int, diff : CoreGraphics.CGFloat, views : Swift.Array&lt;__ObjC.UIView&gt;) -&gt; Swift.Array&lt;__ObjC.UIView&gt;"
+                  moduleName = "LockableScrollViewDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idan/Developer/LockableScrollViewDemo/LockableScrollViewDemo/ViewController.swift"
+                  timestampString = "524671733.697881"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LockableScrollViewDemo.ViewController.(updateYPosition (insertedIndex : Swift.Int, diff : CoreGraphics.CGFloat, views : Swift.Array&lt;__ObjC.UIView&gt;) -&gt; Swift.Array&lt;__ObjC.UIView&gt;).(closure #1)"
+                  moduleName = "LockableScrollViewDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idan/Developer/LockableScrollViewDemo/LockableScrollViewDemo/ViewController.swift"
+                  timestampString = "524671733.699548"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LockableScrollViewDemo/ViewController.swift"
+            timestampString = "524671104.262931"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "updateYPosition(insertedIndex:diff:views:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LockableScrollViewDemo/ViewController.swift"
+            timestampString = "524671725.19004"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "addAtPosition(position:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LockableScrollViewDemo/ViewController.swift"
+            timestampString = "524671757.022451"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "getYPositionForIndex(index:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LockableScrollViewDemo.ViewController.getYPositionForIndex (index : Swift.Int) -&gt; CoreGraphics.CGFloat"
+                  moduleName = "LockableScrollViewDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idan/Developer/LockableScrollViewDemo/LockableScrollViewDemo/ViewController.swift"
+                  timestampString = "524671757.025785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LockableScrollViewDemo.ViewController.(getYPositionForIndex (index : Swift.Int) -&gt; CoreGraphics.CGFloat).(closure #1)"
+                  moduleName = "LockableScrollViewDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/idan/Developer/LockableScrollViewDemo/LockableScrollViewDemo/ViewController.swift"
+                  timestampString = "524671757.028791"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
