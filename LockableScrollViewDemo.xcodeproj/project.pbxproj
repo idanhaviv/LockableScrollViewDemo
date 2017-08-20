@@ -12,6 +12,7 @@
 		EEC26AD51F44171E007EF109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC26AD31F44171E007EF109 /* Main.storyboard */; };
 		EEC26AD71F44171E007EF109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC26AD61F44171E007EF109 /* Assets.xcassets */; };
 		EEC26ADA1F44171E007EF109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEC26AD81F44171E007EF109 /* LaunchScreen.storyboard */; };
+		EED3E5A71F49BC5C008BF4A0 /* LockableScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EED3E5A61F49BC5C008BF4A0 /* LockableScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		EEC26AD61F44171E007EF109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEC26AD91F44171E007EF109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEC26ADB1F44171E007EF109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED3E59E1F49BC20008BF4A0 /* LockableScrollViewDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LockableScrollViewDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		EED3E5A51F49BC5C008BF4A0 /* LockableScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockableScrollView.h; sourceTree = "<group>"; };
+		EED3E5A61F49BC5C008BF4A0 /* LockableScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockableScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,14 @@
 			isa = PBXGroup;
 			children = (
 				EEC26ACF1F44171E007EF109 /* AppDelegate.swift */,
+				EED3E5A51F49BC5C008BF4A0 /* LockableScrollView.h */,
+				EED3E5A61F49BC5C008BF4A0 /* LockableScrollView.m */,
 				EEC26AD11F44171E007EF109 /* ViewController.swift */,
 				EEC26AD31F44171E007EF109 /* Main.storyboard */,
 				EEC26AD61F44171E007EF109 /* Assets.xcassets */,
 				EEC26AD81F44171E007EF109 /* LaunchScreen.storyboard */,
 				EEC26ADB1F44171E007EF109 /* Info.plist */,
+				EED3E59E1F49BC20008BF4A0 /* LockableScrollViewDemo-Bridging-Header.h */,
 			);
 			path = LockableScrollViewDemo;
 			sourceTree = "<group>";
@@ -97,6 +104,7 @@
 					EEC26ACB1F44171E007EF109 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = G77QNEJ94V;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED3E5A71F49BC5C008BF4A0 /* LockableScrollView.m in Sources */,
 				EEC26AD21F44171E007EF109 /* ViewController.swift in Sources */,
 				EEC26AD01F44171E007EF109 /* AppDelegate.swift in Sources */,
 			);
@@ -263,11 +272,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G77QNEJ94V;
 				INFOPLIST_FILE = LockableScrollViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haviv.idan.LockableScrollViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LockableScrollViewDemo/LockableScrollViewDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +288,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = G77QNEJ94V;
 				INFOPLIST_FILE = LockableScrollViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haviv.idan.LockableScrollViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LockableScrollViewDemo/LockableScrollViewDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +318,7 @@
 				EEC26AE01F44171E007EF109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
