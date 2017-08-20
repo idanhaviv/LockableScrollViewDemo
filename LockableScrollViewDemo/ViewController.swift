@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.bounces = true
+//        scrollView.bounces = true
     }
     
     override func viewWillLayoutSubviews() {
@@ -50,9 +50,6 @@ class ViewController: UIViewController {
         let view = imageList.remove(at: index)
         view.removeFromSuperview()
         imageList = updateYPosition(insertedIndex: index, diff: -view.frame.height, views: imageList) as! [UIImageView]
-        if view.frame.origin.y < scrollView.contentOffset.y {
-            scrollView.contentOffset.y -= view.frame.height
-        }
     }
     
     @IBAction func removeTop(_ sender: Any) {
@@ -140,7 +137,6 @@ class ViewController: UIViewController {
         let newImageYPosition = getYPositionForIndex(index: imageIndex)
         newImage.frame.origin = CGPoint(x: scrollView.contentSize.width / 2 - newImage.frame.width / 2,y: newImageYPosition)
         
-        scrollView.contentOffset.y += requiredScrollUpdate(scrollView: scrollView, addedView: newImage)
         scrollView.addSubview(newImage)
         updateLastImage()
     }
